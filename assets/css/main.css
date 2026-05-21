@@ -2473,6 +2473,7 @@ input, select, textarea {
 
 	#event-title {
 		display: flex;
+		flex-direction: column;
 		height: 50px;
 		gap: 50px;
 		justify-content: space-between;
