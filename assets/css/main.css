@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800");
-@import url("fontawesome-all.min.css");
 
 /*
 	ZeroFour by HTML5 UP
@@ -1880,14 +1879,14 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url('../../extra-images/quachuoi.png');
+		background: url('../../club-image/background/quachuoi.webp');
 		background-repeat: no-repeat;
 		background-position: 50% 40% ;
 		background-size: contain;
 		background-color: #8B1A10;
-		background-size: 950px;
+		background-size: 1100px;
 		padding: 1.8em 0;
-		min-height: 1100px;
+		min-height: 1271px;
 	}
 
 	#main-wrapper {
@@ -2468,4 +2467,29 @@ input, select, textarea {
 				padding: 3em 0 1em 0;
 			}
 
+	}
+
+
+
+	#event-title {
+		display: flex;
+		height: 50px;
+		gap: 50px;
+		justify-content: space-between;
+	}
+
+	#event-title button {
+		border: none;
+	}
+
+	#hide-text{
+		text-decoration: underline;
+		text-align: right;
+		margin-top: -20px;
+	}
+
+	
+	#hide-show-btn {
+		background-color: #e1c224;
+		color: white;
 	}
