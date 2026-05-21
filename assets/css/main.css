@@ -1820,7 +1820,7 @@ input, select, textarea {
 		width: 1150px;
 		margin: 0 auto;
 		overflow: hidden;
-		padding: 280px 0px 0px 280px;
+		padding: 250px 0px 0px 310px;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
@@ -1893,8 +1893,8 @@ input, select, textarea {
 		background-position: 50% 50% ;
 		background-size: contain;
 		background-color: #8B1A10;
-		background-size: 2302px;
-		min-height: 1271px;
+		background-size: 1902px;
+		min-height: 100vh;
 	}
 
 	#main-wrapper {
