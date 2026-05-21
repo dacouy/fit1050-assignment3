@@ -1394,12 +1394,21 @@ input, select, textarea {
 			object-fit: cover;
 			object-position: center;
 		}
-		.image img.spotlight-image {
-			width: 100%;
-			height: 276px;
-			object-fit: cover;
-			object-position: center;
-		}
+			.image img.spotlight-image {
+				width: 100%;
+				height: 276px;
+				object-fit: cover;
+				object-position: center;
+			}
+
+			#aim1,
+			#aim2,
+			#aim3 {
+				width: 100%;
+				height: 370px;
+				object-fit: cover;
+				object-position: center;
+			}
 
 		.image:before {
 			content: '';
@@ -1811,7 +1820,7 @@ input, select, textarea {
 		width: 1150px;
 		margin: 0 auto;
 		overflow: hidden;
-		padding: 130px 0px 0px 400px;
+		padding: 280px 0px 0px 280px;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
@@ -1879,13 +1888,12 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url('../../club-image/background/quachuoi.webp');
+		background: url('../../club-image/background/background.webp');
 		background-repeat: no-repeat;
-		background-position: 50% 40% ;
+		background-position: 50% 50% ;
 		background-size: contain;
 		background-color: #8B1A10;
-		background-size: 1100px;
-		padding: 1.8em 0;
+		background-size: 2302px;
 		min-height: 1271px;
 	}
 
@@ -2069,7 +2077,7 @@ input, select, textarea {
 
 			#banner {
 				width: 100%;
-				padding: 4em 0 2em 0;
+				padding: 2em 0 2em 0;
 			}
 
 				#banner h2 {
@@ -2493,4 +2501,12 @@ input, select, textarea {
 		background-color: #e1c224;
 		color: white;
 	}
+
+	.event {
+	padding-left: 40px;
+	padding-right: 40px;
+	}
+
+
+
 	
