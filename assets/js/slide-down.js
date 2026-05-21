@@ -1,27 +1,30 @@
+$('#excerpt-container').hide()
 $(document).ready(function () {
-    var $extraEvents = $('#excerpt-container');
-    var $toggleButton = $('#hide-show-btn');
+    $('#hide-show-btn').click(function() {
 
-    $extraEvents.hide();
-
-    $toggleButton.on('click', function (event) {
-        event.preventDefault();
-
-        var isOpen = $toggleButton.attr('aria-expanded') === 'true';
-
-        if (isOpen) {
-            $extraEvents.stop(true, true).slideUp();
-            $toggleButton.text('Show all').attr('aria-expanded', 'false');
-        } else {
-            $extraEvents.stop(true, true).slideDown();
-            $toggleButton.text('Hide events').attr('aria-expanded', 'true');
-            $('html, body').animate({ scrollTop: $('#event').offset().top }, 200);
+        
+        if($(this).text() === "Show all") {
+            $(this).text("Hide events");
+            $("html, body").animate({scrollTop: 3600}, '200');
+            $('#excerpt-container').slideDown()
         }
-    });
+        else {
+            $(this).text("Show all");
+            $('#excerpt-container').slideUp()
+        }
+    })
 
-    $('#hide-text').on('click', function () {
-        $extraEvents.stop(true, true).slideUp();
-        $toggleButton.text('Show all').attr('aria-expanded', 'false');
-        $('html, body').animate({ scrollTop: $('#event').offset().top }, 200);
-    });
-});
+
+})
+
+$(document).ready(function () {
+    $('#hide-text').click(function() {
+        $('#excerpt-container').slideUp()
+        $("html, body").animate({scrollTop: 2900}, '200');
+        $('#hide-show-btn').text("Show all");
+
+
+    })
+
+
+})
